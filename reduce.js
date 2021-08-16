@@ -1,3 +1,6 @@
+function testReduce(items, start){
+    return reduce(items, callBack, start);
+}
 
 function reduce(elements, cb, start){
     if(start == undefined){
@@ -11,4 +14,11 @@ function reduce(elements, cb, start){
         return sum;
     }
 }
-module.exports = reduce;
+function callBack(items, start, index){
+    let sum = start;
+    for(index; index<items.length; index++){
+        sum+=items[index];
+    }
+    return sum;
+}
+module.exports = testReduce;
