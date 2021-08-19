@@ -1,6 +1,3 @@
-function testFilter(items){
-    return filter(items, callBack);
-}
 
 function filter(elements, cb){
     let newArray = [];
@@ -11,8 +8,5 @@ function filter(elements, cb){
     }
     return newArray;  
 }
-function callBack(item){
-    return item<5;
-}
 
-module.exports = testFilter;
+module.exports = filter;
